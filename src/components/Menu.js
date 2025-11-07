@@ -11,21 +11,19 @@ const Menu = ({menu, categories, filter, setFilter}) => {
             setFilteredArray(menu)
         }
         
-    },[filter, menu])
+    },[filter])
   return (
     <div id='main'>
-      {/* {
+      {
         categories.map((category, index)=>(
-            <button id = {`filter-button-${index}`} onClick={()=>{setFilter(category)}} key={index}>{category}</button>
+            <button id = {`filter-btn-${index}`} onClick={()=>{setFilter(category)}} key={index}>{category}</button>
         ))
         
-      } */}
-      {/* <button id='filter-button-0' onClick={()=>{setFilter('All')}}>All</button> */}
-      <button id='filter-button-3' onClick={()=>{setFilter('Shakes')}}>Shakes</button>
-
-      <button id='filter-button-2' onClick={()=>{setFilter('Lunch')}}>Lunch</button>
+      }
+      {/* <button id='filter-button-0' onClick={()=>{setFilter('All')}}>All</button>
       <button id='filter-button-1' onClick={()=>{setFilter('Breakfast')}}>BreakFast</button>
-
+      <button id='filter-button-2' onClick={()=>{setFilter('Lunch')}}>Lunch</button>
+      <button id='filter-button-3' onClick={()=>{setFilter('Shakes')}}>Shakes</button> */}
       {
         filteredArray.map((item)=>(
             <div key={item.id}>
