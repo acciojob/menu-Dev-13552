@@ -20,7 +20,7 @@ const Menu = ({menu, categories, filter, setFilter}) => {
         ))
         
       } */}
-      <button id='filter-button-0' onClick={()=>{setFilter('All')}}>All</button>
+      {/* <button id='filter-button-0' onClick={()=>{setFilter('All')}}>All</button> */}
       <button id='filter-button-1' onClick={()=>{setFilter('Breakfast')}}>BreakFast</button>
       <button id='filter-button-2' onClick={()=>{setFilter('Lunch')}}>Lunch</button>
       <button id='filter-button-3' onClick={()=>{setFilter('Shakes')}}>Shakes</button>
