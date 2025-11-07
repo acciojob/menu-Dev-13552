@@ -26,7 +26,7 @@ const Menu = ({menu, categories, filter, setFilter}) => {
       <button id='filter-button-3' onClick={()=>{setFilter('Shakes')}}>Shakes</button> */}
       {
         filteredArray.map((item)=>(
-            <div key={item.id} data-test-id = {`menu-item-${item.name.toLowerCase()}`}>
+            <div key={item.id} data-test-id = {`menu-item-${item.category.toLowerCase()}`}>
                 <div>{item.name}</div>
                 <div>{item.category}</div>
                 <div>{item.price}</div>
