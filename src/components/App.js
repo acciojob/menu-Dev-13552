@@ -38,7 +38,7 @@ const App = () => {
         }
 
     ]
-    const categories = ["All", "Breakfast", "Lunch", "Shakes"]
+    const categories = ["Breakfast", "Lunch", "Shakes"]
     const [filter, setFilter] = useState(categories[0])
   return (
     
